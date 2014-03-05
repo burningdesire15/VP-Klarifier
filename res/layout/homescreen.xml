@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" 
+    android:background="@drawable/gradient">
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        
+    >
+ <com.facebook.widget.LoginButton
+           android:id="@+id/authButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="59dp"
+    
+         />
+        <com.facebook.widget.ProfilePictureView 
+        android:id="@+id/userImage"
+       android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="25dp"
+           facebook:preset_size="small"
+        />
+        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="25dp"
+            android:text="Button" />
+ 
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+       android:weightSum="10"
+      
+   
+        android:orientation="horizontal">
+       
+        <LinearLayout
+           android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_weight="5"
+      
+        android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/animate"
+                android:textSize="20dp"
+                android:text="Login" />
+           
+        </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" 
+             android:layout_weight="5"
+             android:layout_margin="2dp"
+               android:orientation="horizontal"
+               
+               >
+               
+        <Button
+            android:id="@+id/bContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/animate"
+            android:textSize="20dp"
+          
+            android:text="Register"
+         />
+               
+               
+               
+           </LinearLayout>
+       </LinearLayout>
+<LinearLayout 
+android:layout_weight="45"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:background="#A8C8E1"
+      android:gravity="center"
+    >
+     <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/animate"
+            android:text="Continue" 
+            android:textSize="20dp"
+            android:layout_gravity="center" />
+           <!--  android:drawableRight="@drawable/ic_action_arrow_right" -->
+    
+   
+</LinearLayout>
+       
+
+
+</LinearLayout>
