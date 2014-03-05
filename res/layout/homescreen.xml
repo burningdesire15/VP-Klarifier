@@ -1,5 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
      xmlns:facebook="http://schemas.android.com/apk/res-auto"
+=======
+>>>>>>> 9a48e521009e5b3177312a0c8ce497c69927484d
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
@@ -11,6 +14,7 @@
         android:layout_height="fill_parent"
         android:layout_weight="10"
         
+<<<<<<< HEAD
     >
  <com.facebook.widget.LoginButton
            android:id="@+id/authButton"
@@ -41,6 +45,9 @@
             android:layout_marginTop="25dp"
             android:text="Button" />
  
+=======
+    > 
+>>>>>>> 9a48e521009e5b3177312a0c8ce497c69927484d
     </RelativeLayout>
 
     <LinearLayout
